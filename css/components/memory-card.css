@@ -1,0 +1,32 @@
+.memory-card {
+  width: 155px;
+  height: 155px;
+  background-color: #f25a70;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.memory-card > .icon {
+  width: 100px;
+  height: 100px;
+}
+
+.memory-card > .icon.-open {
+  width: 97px;
+  height: 97px;
+  margin-bottom: 50px;
+}
+
+.memory-card.-open {
+  background-color: #fff;
+}
+.ball {
+  width: 183px;
+  height: 182px;
+  background-color: #d4d4d4;
+  border-radius: 100px;
+  position: absolute;
+}
