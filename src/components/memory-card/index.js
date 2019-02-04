@@ -1,15 +1,15 @@
-const createMemoryCard = () => `
-  <article class="memory-card">
+const createMemoryCard = (nameClass, src, alt) => `
+  <article class="memory-card ${nameClass}">
     <img 
-      src='images/icon-collabcode.png' 
-      alt='Gueio Mascote da collabcode' 
-      class='icon' 
+      src="${src}" 
+      alt="${alt}" 
+      class="icon" 
       onClick="handleClick()"
     />
   </article>
   `;
 
-const createMemoryCardFront = () => `
+/*const createMemoryCardFront = () => `
   <article class="memory-card -front">
     <img
       src="images/-icon-js.png"
@@ -18,6 +18,6 @@ const createMemoryCardFront = () => `
       onClick="handleClick()"
     />
   </article>
-  `;
+  `;*/
 
 const handleClick = () => console.log("Aeee");
