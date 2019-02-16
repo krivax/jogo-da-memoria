@@ -40,6 +40,7 @@ function memoryCard() {
     background-color: #d4d4d4;
     border-radius: 50%;
     position: absolute;
+    
   }
 
   .memory-card .card > .icon {
@@ -55,7 +56,7 @@ function memoryCard() {
   $head.insertBefore($style, null);
 
   return ({ src, alt }) => `
-  <div class="memory-card -active" onClick="handleClick(this)">
+  <div class="memory-card " onClick="handleClick(this)">
     <article class="card -front">
       <img 
         src="${src}" 
