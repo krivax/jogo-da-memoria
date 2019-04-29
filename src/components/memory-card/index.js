@@ -104,6 +104,10 @@ const memoryCard = (function() {
         $activeMemorycards[1].querySelector(".-front .icon").getAttribute("src")
       ) {
         store.score++;
+
+        document.querySelector(".point-bar > .number").textContent =
+          store.score;
+
         $activeMemorycards.forEach($memoryCard => {
           $memoryCard.classList.add("-score");
           $memoryCard.classList.remove("-active");
