@@ -17,7 +17,7 @@ const pointBar = (function() {
       color: #fff;
       line-height: 40px;
       font-weight: bold;
-    }
+    } 
     `;
 
     $head.insertBefore($style, null);
