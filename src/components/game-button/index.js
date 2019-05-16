@@ -22,11 +22,12 @@ const gameButton = (function() {
       text-transform: uppercase;
       cursor: pointer;
       box-shadow: 0px 4px 8px #3a4042;
-      transition: opacity 200ms linear;
+      transition: opacity 200ms linear, transform 200ms linear;
     }
     
     .game-button.-disable {
       opacity: 0;
+      transform: translate(-50%, -35%) scale(2);
     }`;
     $head.insertBefore($style, null);
   };
