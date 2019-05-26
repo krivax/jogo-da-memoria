@@ -9,6 +9,9 @@ const flatButton = (function() {
 
     $style.textContent = `
     .flat-button-${module._id} {
+      box-sizing: border-box;
+      display: inline-flex;
+      justify-content: center;
       background-color: ${active ? "#f25a70" : "#eae6da"} ;
       color: ${active ? "#fff" : "#fffcee"};
       font-size:24px;
@@ -16,7 +19,9 @@ const flatButton = (function() {
       border: none;
       width: 50%;
       height: 176px;
+      padding-top:60px;
       text-transform: uppercase;
+      
       cursor: pointer;
     }
     .flat-button.-active{
