@@ -16,6 +16,7 @@ const inputCollabcode = (function() {
       padding-top: 12px;
       padding-bottom: 12px;
     }
+
     `;
 
     $head.insertAdjacentElement("beforeend", $style);
