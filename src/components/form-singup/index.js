@@ -16,15 +16,15 @@ const formSingnup = (function() {
 
   module._children = () => {
     const $labelEmail = labelCollabcode.render("E-mail");
-    const $inputEmail = inputCollabcode.render();
+    const $inputEmail = inputCollabcode.render("exemple@email.com");
 
     const $labelUsername = labelCollabcode.render("Username");
-    const $inputUsername = inputCollabcode.render();
+    const $inputUsername = inputCollabcode.render("Username");
 
     const $labelPassword = labelCollabcode.render("Password");
-    const $inputPassword = inputCollabcode.render();
+    const $inputPassword = inputCollabcode.render("******");
     const $labelConfPassword = labelCollabcode.render("Confirm Password");
-    const $inputConfPassword = inputCollabcode.render();
+    const $inputConfPassword = inputCollabcode.render("******");
 
     const $btnSubmit = btnCollabcode.render("Submit");
 
@@ -46,7 +46,7 @@ const formSingnup = (function() {
 
   module.render = () => {
     module._style();
-    return `<form class="form-signup" action="" method="POST">${module._children()}</form>`;
+    return `<form class="form-signup" action="" method="POST" >${module._children()}</form>`;
   };
 
   return {

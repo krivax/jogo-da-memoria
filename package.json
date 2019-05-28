@@ -1,0 +1,25 @@
+{
+  "name": "memoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krivax/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo"
+  ],
+  "author": "Krivax",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/krivax/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/krivax/jogo-da-memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
