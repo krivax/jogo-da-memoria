@@ -1,4 +1,4 @@
-const formSingnup = (function() {
+const formLogin = (function() {
   const module = {};
 
   module._style = () => {
@@ -6,7 +6,7 @@ const formSingnup = (function() {
     const $style = document.createElement("style");
 
     $style.textContent = `
-      .form-signup{
+      .form-login{
         padding: 0 35px 40px;
       }
     `;
@@ -15,38 +15,28 @@ const formSingnup = (function() {
   };
 
   module._children = () => {
-    const $labelEmail = labelCollabcode.render("E-mail", "email");
+    const $labelEmail = labelCollabcode.render("Username ou E-mail");
     const $inputEmail = inputCollabcode.render("exemple@email.com");
-
-    const $labelUsername = labelCollabcode.render("Username");
-    const $inputUsername = inputCollabcode.render("Username");
 
     const $labelPassword = labelCollabcode.render("Password");
     const $inputPassword = inputCollabcode.render("******");
-    const $labelConfPassword = labelCollabcode.render("Confirm Password");
-    const $inputConfPassword = inputCollabcode.render("******");
 
-    const $btnSubmit = btnCollabcode.render("Submit");
+    const $btnSubmit = btnCollabcode.render("Login");
 
     return `
     ${$labelEmail}
     ${$inputEmail}
-    
-    ${$labelUsername}
-    ${$inputUsername}
 
     ${$labelPassword}
     ${$inputPassword}
-    
-    ${$labelConfPassword}
-    ${$inputConfPassword}
+
     
     ${$btnSubmit}`;
   };
 
   module.render = () => {
     module._style();
-    return `<form class="form-signup" action="" method="POST" >${module._children()}</form>`;
+    return `<form class="form-login" action="" method="POST" >${module._children()}</form>`;
   };
 
   return {
