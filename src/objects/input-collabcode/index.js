@@ -7,10 +7,10 @@ const inputCollabcode = (function() {
 
     $style.textContent = `
     .input-collabcode {
-      display:block;
+      display: block;
       width: 100%;
       color: #3a4042;
-      font-size:18px;
+      font-size: 18px;
       font-weight: bold;
       border-bottom: 2px solid rgba(58, 64, 66, 0.5);
       padding-top: 12px;
@@ -22,10 +22,10 @@ const inputCollabcode = (function() {
     $head.insertAdjacentElement("beforeend", $style);
   };
 
-  module.render = placeholder => {
+  module.render = ({ id = "", placeholder = "", type = "text" }) => {
     module._style();
-    return `<input class="input-collabcode" type="email" placeholder=${placeholder ||
-      ""} > `;
+    return `<input id="${id}" class="input-collabcode" type="${type}" placeholder="${placeholder ||
+      ""}" > `;
   };
 
   return {

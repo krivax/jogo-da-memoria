@@ -16,12 +16,27 @@ const formLogin = (function() {
 
   module._children = () => {
     const $labelEmail = labelCollabcode.render("Username ou E-mail");
-    const $inputEmail = inputCollabcode.render("exemple@email.com");
-
+    const $inputEmail = inputCollabcode.render({
+      placeholder: "exemple@email.com",
+      type: "email"
+    });
     const $labelPassword = labelCollabcode.render("Password");
-    const $inputPassword = inputCollabcode.render("******");
+    const $inputPassword = inputCollabcode.render({
+      id: "password",
+      placeholder: "sua senha",
+      type: "password"
+    });
+    const $eyeCollabcode = eyeCollabcode.render({ attrFor: "password" });
 
-    const $btnSubmit = btnCollabcode.render("Login");
+    const $linkCollabcode = linkCollabcode.render({
+      href: "#",
+      content: "Forget password?"
+    });
+
+    const $btn = btnCollabcode.render({
+      content: "Login",
+      path: "game"
+    });
 
     return `
     ${$labelEmail}
@@ -29,9 +44,11 @@ const formLogin = (function() {
 
     ${$labelPassword}
     ${$inputPassword}
+    ${$eyeCollabcode}
 
+    ${$linkCollabcode}
     
-    ${$btnSubmit}`;
+    ${$btn}`;
   };
 
   module.render = () => {
